@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.1.1" type="incidents">
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Tap a student to mark attendance&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_class_detail.xml"
+            line="11"
+            column="9"
+            startOffset="385"
+            endLine="11"
+            endColumn="56"
+            endOffset="432"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Add Student&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_class_detail.xml"
+            line="32"
+            column="9"
+            startOffset="1203"
+            endLine="32"
+            endColumn="49"
+            endOffset="1243"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Start Attendance&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_class_detail.xml"
+            line="43"
+            column="9"
+            startOffset="1604"
+            endLine="43"
+            endColumn="54"
+            endOffset="1649"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Holiday&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_class_detail.xml"
+            line="54"
+            column="9"
+            startOffset="2011"
+            endLine="54"
+            endColumn="45"
+            endOffset="2047"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;View Data&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_class_detail.xml"
+            line="64"
+            column="9"
+            startOffset="2359"
+            endLine="64"
+            endColumn="47"
+            endOffset="2397"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Class Photo&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_class_form.xml"
+            line="18"
+            column="13"
+            startOffset="633"
+            endLine="18"
+            endColumn="53"
+            endOffset="673"/>
+    </incident>
+
+    <incident
+        id="TextFields"
+        severity="warning"
+        message="This text field does not specify an `inputType`">
+        <fix-attribute
+            description="Set inputType"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="inputType"
+            value="TODO"
+            dot="4"
+            mark="0"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_class_form.xml"
+            line="20"
+            column="10"
+            startOffset="688"
+            endLine="20"
+            endColumn="18"
+            endOffset="696"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_class_form.xml"
+            line="20"
+            column="10"
+            startOffset="688"
+            endLine="20"
+            endColumn="18"
+            endOffset="696"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;School Name&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_class_form.xml"
+            line="24"
+            column="13"
+            startOffset="853"
+            endLine="24"
+            endColumn="39"
+            endOffset="879"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Save Class&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_class_form.xml"
+            line="41"
+            column="13"
+            startOffset="1479"
+            endLine="41"
+            endColumn="52"
+            endOffset="1518"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;No classes yet&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_class_list.xml"
+            line="16"
+            column="9"
+            startOffset="569"
+            endLine="16"
+            endColumn="38"
+            endOffset="598"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Add Class&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_class_list.xml"
+            line="28"
+            column="9"
+            startOffset="989"
+            endLine="28"
+            endColumn="47"
+            endOffset="1027"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Splash GIF&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_splash.xml"
+            line="13"
+            column="9"
+            startOffset="466"
+            endLine="13"
+            endColumn="48"
+            endOffset="505"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Made by Jivaansh&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_splash.xml"
+            line="19"
+            column="9"
+            startOffset="662"
+            endLine="19"
+            endColumn="40"
+            endOffset="693"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Attendance Details&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_student_detail.xml"
+            line="11"
+            column="9"
+            startOffset="384"
+            endLine="11"
+            endColumn="42"
+            endOffset="417"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Export Attendance&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_student_detail.xml"
+            line="24"
+            column="9"
+            startOffset="863"
+            endLine="24"
+            endColumn="55"
+            endOffset="909"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Student Photo&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_student_form.xml"
+            line="18"
+            column="13"
+            startOffset="633"
+            endLine="18"
+            endColumn="55"
+            endOffset="675"/>
+    </incident>
+
+    <incident
+        id="TextFields"
+        severity="warning"
+        message="This text field does not specify an `inputType`">
+        <fix-attribute
+            description="Set inputType"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="inputType"
+            value="TODO"
+            dot="4"
+            mark="0"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_student_form.xml"
+            line="20"
+            column="10"
+            startOffset="690"
+            endLine="20"
+            endColumn="18"
+            endOffset="698"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_student_form.xml"
+            line="20"
+            column="10"
+            startOffset="690"
+            endLine="20"
+            endColumn="18"
+            endOffset="698"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Student Name&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_student_form.xml"
+            line="24"
+            column="13"
+            startOffset="849"
+            endLine="24"
+            endColumn="40"
+            endOffset="876"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Save Student&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_student_form.xml"
+            line="41"
+            column="13"
+            startOffset="1476"
+            endLine="41"
+            endColumn="54"
+            endOffset="1517"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Fingerprint&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/dialog_fingerprint.xml"
+            line="15"
+            column="9"
+            startOffset="528"
+            endLine="15"
+            endColumn="49"
+            endOffset="568"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Touch sensor&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/dialog_fingerprint.xml"
+            line="21"
+            column="9"
+            startOffset="724"
+            endLine="21"
+            endColumn="36"
+            endOffset="751"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Class Name&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/item_class.xml"
+            line="11"
+            column="9"
+            startOffset="383"
+            endLine="11"
+            endColumn="34"
+            endOffset="408"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Teacher&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/item_class.xml"
+            line="19"
+            column="9"
+            startOffset="632"
+            endLine="19"
+            endColumn="31"
+            endOffset="654"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Edit Class&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/item_class.xml"
+            line="31"
+            column="9"
+            startOffset="1042"
+            endLine="31"
+            endColumn="48"
+            endOffset="1081"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Student Photo&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/item_student.xml"
+            line="12"
+            column="9"
+            startOffset="402"
+            endLine="12"
+            endColumn="51"
+            endOffset="444"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Student Name&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/item_student.xml"
+            line="18"
+            column="9"
+            startOffset="598"
+            endLine="18"
+            endColumn="36"
+            endOffset="625"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Edit Student&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/item_student.xml"
+            line="32"
+            column="9"
+            startOffset="1100"
+            endLine="32"
+            endColumn="50"
+            endOffset="1141"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/jivaansh/biometricattendance/ui/ClassDetailActivity.kt"
+            line="32"
+            column="39"
+            startOffset="1278"
+            endLine="32"
+            endColumn="71"
+            endOffset="1310"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/jivaansh/biometricattendance/ui/ClassListActivity.kt"
+            line="33"
+            column="33"
+            startOffset="1206"
+            endLine="33"
+            endColumn="47"
+            endOffset="1220"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/jivaansh/biometricattendance/ui/SplashActivity.kt"
+            line="20"
+            column="34"
+            startOffset="693"
+            endLine="20"
+            endColumn="50"
+            endOffset="709"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/jivaansh/biometricattendance/ui/StudentDetailActivity.kt"
+            line="17"
+            column="38"
+            startOffset="605"
+            endLine="17"
+            endColumn="56"
+            endOffset="623"/>
+    </incident>
+
+    <incident
+        id="KaptUsageInsteadOfKsp"
+        severity="warning"
+        message="This library supports using KSP instead of kapt, which greatly improves performance. Learn more: https://developer.android.com/studio/build/migrate-to-ksp">
+        <show-url
+            description="Learn about how to enable KSP and use the KSP processor for this dependency instead"
+            url="https://developer.android.com/studio/build/migrate-to-ksp"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="59"
+            column="5"
+            startOffset="1564"
+            endLine="59"
+            endColumn="46"
+            endOffset="1605"/>
+    </incident>
+
+    <incident
+        id="KaptUsageInsteadOfKsp"
+        severity="warning"
+        message="This library supports using KSP instead of kapt, which greatly improves performance. Learn more: https://developer.android.com/studio/build/migrate-to-ksp">
+        <show-url
+            description="Learn about how to enable KSP and use the KSP processor for this dependency instead"
+            url="https://developer.android.com/studio/build/migrate-to-ksp"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="64"
+            column="5"
+            startOffset="1747"
+            endLine="64"
+            endColumn="54"
+            endOffset="1796"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.core:core-ktx than 1.13.1 is available: 1.17.0">
+        <fix-replace
+            description="Change to 1.17.0"
+            family="Update versions"
+            oldString="1.13.1"
+            replacement="1.17.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="47"
+            column="21"
+            startOffset="998"
+            endLine="47"
+            endColumn="50"
+            endOffset="1027"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.appcompat:appcompat than 1.7.0 is available: 1.7.1">
+        <fix-replace
+            description="Change to 1.7.1"
+            family="Update versions"
+            oldString="1.7.0"
+            replacement="1.7.1"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="48"
+            column="21"
+            startOffset="1050"
+            endLine="48"
+            endColumn="55"
+            endOffset="1084"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.android.material:material than 1.12.0 is available: 1.13.0">
+        <fix-replace
+            description="Change to 1.13.0"
+            family="Update versions"
+            oldString="1.12.0"
+            replacement="1.13.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="49"
+            column="21"
+            startOffset="1107"
+            endLine="49"
+            endColumn="64"
+            endOffset="1150"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.1">
+        <fix-replace
+            description="Change to 2.2.1"
+            family="Update versions"
+            oldString="2.1.4"
+            replacement="2.2.1"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="50"
+            column="21"
+            startOffset="1173"
+            endLine="50"
+            endColumn="69"
+            endOffset="1221"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.8.4 is available: 2.9.3">
+        <fix-replace
+            description="Change to 2.9.3"
+            family="Update versions"
+            oldString="2.8.4"
+            replacement="2.9.3"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="53"
+            column="21"
+            startOffset="1293"
+            endLine="53"
+            endColumn="69"
+            endOffset="1341"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-livedata-ktx than 2.8.4 is available: 2.9.3">
+        <fix-replace
+            description="Change to 2.9.3"
+            family="Update versions"
+            oldString="2.8.4"
+            replacement="2.9.3"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="54"
+            column="21"
+            startOffset="1364"
+            endLine="54"
+            endColumn="68"
+            endOffset="1411"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.8.4 is available: 2.9.3">
+        <fix-replace
+            description="Change to 2.9.3"
+            family="Update versions"
+            oldString="2.8.4"
+            replacement="2.9.3"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="55"
+            column="21"
+            startOffset="1434"
+            endLine="55"
+            endColumn="67"
+            endOffset="1480"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.room:room-runtime than 2.6.1 is available: 2.7.2">
+        <fix-replace
+            description="Change to 2.7.2"
+            family="Update versions"
+            oldString="2.6.1"
+            replacement="2.7.2"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="58"
+            column="21"
+            startOffset="1525"
+            endLine="58"
+            endColumn="53"
+            endOffset="1557"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.room:room-compiler than 2.6.1 is available: 2.7.2">
+        <fix-replace
+            description="Change to 2.7.2"
+            family="Update versions"
+            oldString="2.6.1"
+            replacement="2.7.2"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="59"
+            column="11"
+            startOffset="1570"
+            endLine="59"
+            endColumn="44"
+            endOffset="1603"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.room:room-ktx than 2.6.1 is available: 2.7.2">
+        <fix-replace
+            description="Change to 2.7.2"
+            family="Update versions"
+            oldString="2.6.1"
+            replacement="2.7.2"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="60"
+            column="21"
+            startOffset="1626"
+            endLine="60"
+            endColumn="49"
+            endOffset="1654"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.biometric:biometric than 1.2.0-alpha05 is available: 1.4.0-alpha04">
+        <fix-replace
+            description="Change to 1.4.0-alpha04"
+            family="Update versions"
+            oldString="1.2.0-alpha05"
+            replacement="1.4.0-alpha04"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="67"
+            column="21"
+            startOffset="1850"
+            endLine="67"
+            endColumn="63"
+            endOffset="1892"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.ext:junit than 1.2.1 is available: 1.3.0">
+        <fix-replace
+            description="Change to 1.3.0"
+            family="Update versions"
+            oldString="1.2.1"
+            replacement="1.3.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="71"
+            column="32"
+            startOffset="1987"
+            endLine="71"
+            endColumn="61"
+            endOffset="2016"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.espresso:espresso-core than 3.6.1 is available: 3.7.0">
+        <fix-replace
+            description="Change to 3.7.0"
+            family="Update versions"
+            oldString="3.6.1"
+            replacement="3.7.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="72"
+            column="32"
+            startOffset="2050"
+            endLine="72"
+            endColumn="74"
+            endOffset="2092"/>
+    </incident>
+
+    <incident
+        id="IconLocation"
+        severity="warning"
+        message="Found bitmap drawable `res/drawable/edit.png` in densityless folder">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/drawable/edit.png"/>
+    </incident>
+
+    <incident
+        id="IconLocation"
+        severity="warning"
+        message="Found bitmap drawable `res/drawable/failure.gif` in densityless folder">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/drawable/failure.gif"/>
+    </incident>
+
+    <incident
+        id="IconLocation"
+        severity="warning"
+        message="Found bitmap drawable `res/drawable/fingerprint.gif` in densityless folder">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/drawable/fingerprint.gif"/>
+    </incident>
+
+    <incident
+        id="IconLocation"
+        severity="warning"
+        message="Found bitmap drawable `res/drawable/holiday.png` in densityless folder">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/drawable/holiday.png"/>
+    </incident>
+
+    <incident
+        id="IconLocation"
+        severity="warning"
+        message="Found bitmap drawable `res/drawable/image.png` in densityless folder">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/drawable/image.png"/>
+    </incident>
+
+    <incident
+        id="IconLocation"
+        severity="warning"
+        message="Found bitmap drawable `res/drawable/logo.png` in densityless folder">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/drawable/logo.png"/>
+    </incident>
+
+    <incident
+        id="IconLocation"
+        severity="warning"
+        message="Found bitmap drawable `res/drawable/paper.png` in densityless folder">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/drawable/paper.png"/>
+    </incident>
+
+    <incident
+        id="IconLocation"
+        severity="warning"
+        message="Found bitmap drawable `res/drawable/plus.png` in densityless folder">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/drawable/plus.png"/>
+    </incident>
+
+    <incident
+        id="IconLocation"
+        severity="warning"
+        message="Found bitmap drawable `res/drawable/splashscreen.gif` in densityless folder">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/drawable/splashscreen.gif"/>
+    </incident>
+
+    <incident
+        id="IconLocation"
+        severity="warning"
+        message="Found bitmap drawable `res/drawable/startattendance.png` in densityless folder">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/drawable/startattendance.png"/>
+    </incident>
+
+    <incident
+        id="IconLocation"
+        severity="warning"
+        message="Found bitmap drawable `res/drawable/success.gif` in densityless folder">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/drawable/success.gif"/>
+    </incident>
+
+    <incident
+        id="GifUsage"
+        severity="warning"
+        message="Using the `.gif` format for bitmaps is discouraged">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/drawable/failure.gif"/>
+    </incident>
+
+    <incident
+        id="GifUsage"
+        severity="warning"
+        message="Using the `.gif` format for bitmaps is discouraged">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/drawable/fingerprint.gif"/>
+    </incident>
+
+    <incident
+        id="GifUsage"
+        severity="warning"
+        message="Using the `.gif` format for bitmaps is discouraged">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/drawable/splashscreen.gif"/>
+    </incident>
+
+    <incident
+        id="GifUsage"
+        severity="warning"
+        message="Using the `.gif` format for bitmaps is discouraged">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/drawable/success.gif"/>
+    </incident>
+
+    <incident
+        id="IconDuplicatesConfig"
+        severity="warning"
+        message="The `logo.png` icon has identical contents in the following configuration folders: drawable, mipmap-mdpi">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/mipmap-mdpi/logo.png"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/drawable/logo.png"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `#FFFFFF` with a theme that also paints a background (inferred theme is `@style/Theme.BiometricAttendance`)">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_splash.xml"
+            line="5"
+            column="5"
+            startOffset="203"
+            endLine="5"
+            endColumn="33"
+            endOffset="231"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@android:color/white` with a theme that also paints a background (inferred theme is `@style/Theme.BiometricAttendance`)">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/dialog_fingerprint.xml"
+            line="8"
+            column="5"
+            startOffset="295"
+            endLine="8"
+            endColumn="46"
+            endOffset="336"/>
+    </incident>
+
+</incidents>

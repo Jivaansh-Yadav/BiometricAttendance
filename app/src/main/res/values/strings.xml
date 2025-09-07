@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Biometric Attendance</string>
+    <string name="made_by">Made by - Jivaansh Yadav</string>
+    <string name="splash_desc">Splash animation</string>
+    <string name="add_class">Add Class</string>
+    <string name="add_student">Add Student</string>
+    <string name="start_attendance">Start Attendance</string>
+    <string name="end_attendance">End Attendance</string>
+    <string name="label_class_name">Class Name</string>
+    <string name="label_teacher_name">Teacher Name</string>
+    <string name="label_school_name">School Name</string>
+    <string name="label_student_name">Student Name</string>
+    <string name="edit">Edit</string>
+    <string name="data">Data</string>
+    <string name="mark_holiday">Mark Holiday</string>
+    <string name="save">Save</string>
+    <string name="export">Export CSV</string>
+</resources>

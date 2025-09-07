@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="C:\Users\Jivaansh\Desktop\BiometricAttendance\app"
+    name=":app"
+    type="APP"
+    maven="BiometricAttendance:app:"
+    agpVersion="8.1.1"
+    buildFolder="build"
+    bootClassPath="C:\Android\SDK\platforms\android-34\android.jar;C:\Android\SDK\build-tools\33.0.1\core-lambda-stubs.jar"
+    javaSourceLevel="17"
+    compileTarget="android-34"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="debug"/>
+</lint-module>

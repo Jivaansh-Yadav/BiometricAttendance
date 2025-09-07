@@ -1,0 +1,463 @@
+C:\Users\Jivaansh\.gradle\caches\transforms-3\7444e08999006154805fa9d9f8c3b223\transformed\lifecycle-livedata-core-2.8.4\jars\lint.jar: Warning: Library lint checks reference invalid APIs; these checks will be skipped!
+
+Lint found an issue registry (androidx.lifecycle.lint.LiveDataCoreIssueRegistry)
+which contains some references to invalid API:
+org.jetbrains.kotlin.analysis.api.session.KtAnalysisSessionProvider: org.jetbrains.kotlin.analysis.api.lifetime.KtLifetimeTokenFactory getTokenFactory()
+(Referenced from androidx/lifecycle/lint/NonNullableMutableLiveDataDetector$createUastHandler$1.class)
+
+Therefore, this lint check library is not included
+in analysis. This affects the following lint checks:
+NullSafeMutableLiveData
+
+To use this lint check, upgrade to a more recent version
+of the library. [ObsoleteLintCustomCheck]
+
+   Explanation for issues of type "ObsoleteLintCustomCheck":
+   Lint can be extended with "custom checks": additional checks implemented by
+   developers and libraries to for example enforce specific API usages
+   required by a library or a company coding style guideline.
+
+   The Lint APIs are not yet stable, so these checks may either cause a
+   performance degradation, or stop working, or provide wrong results.
+
+   This warning flags custom lint checks that are found to be using obsolete
+   APIs and will need to be updated to run in the current lint environment.
+
+   It may also flag issues found to be using a newer version of the API,
+   meaning that you need to use a newer version of lint (or Android Studio or
+   Gradle plugin etc) to work with these checks.
+
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:4: Warning: WRITE_EXTERNAL_STORAGE is deprecated (and is not granted) when targeting Android 13+. If you need to write to shared storage, use the MediaStore.createWriteRequest intent. [ScopedStorage]
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ScopedStorage":
+   Scoped storage is enforced on Android 10+ (or Android 11+ if using
+   requestLegacyExternalStorage). In particular, WRITE_EXTERNAL_STORAGE will
+   no longer provide write access to all files; it will provide the equivalent
+   of READ_EXTERNAL_STORAGE instead.
+
+   As of Android 13, if you need to query or interact with MediaStore or media
+   files on the shared storage, you should be using instead one or more new
+   storage permissions:
+   * android.permission.READ_MEDIA_IMAGES
+   * android.permission.READ_MEDIA_VIDEO
+   * android.permission.READ_MEDIA_AUDIO
+
+   and then add maxSdkVersion="33" to the older permission. See the developer
+   guide for how to do this:
+   https://developer.android.com/about/versions/13/behavior-changes-13#granula
+   r-media-permissions
+
+   The MANAGE_EXTERNAL_STORAGE permission can be used to manage all files, but
+   it is rarely necessary and most apps on Google Play are not allowed to use
+   it. Most apps should instead migrate to use scoped storage. To modify or
+   delete files, apps should request write access from the user as described
+   at https://goo.gle/android-mediastore-createwriterequest.
+
+   To learn more, read these resources: Play policy:
+   https://goo.gle/policy-storage-help Allowable use cases:
+   https://goo.gle/policy-storage-usecases
+
+   https://goo.gle/android-storage-usecases
+
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\java\com\jivaansh\biometricattendance\ui\SplashActivity.kt:9: Warning: The application should not provide its own launch screen [CustomSplashScreen]
+class SplashActivity : AppCompatActivity() {
+      ~~~~~~~~~~~~~~
+
+   Explanation for issues of type "CustomSplashScreen":
+   Starting in Android 12 (API 31+), the application's Launch Screen is
+   provided by the system and the application should not create its own,
+   otherwise the user will see two splashscreens. Please check the
+   SplashScreen class to check how the Splash Screen can be controlled and
+   customized.
+
+   https://developer.android.com/guide/topics/ui/splash-screen
+
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\build.gradle.kts:47: Warning: A newer version of androidx.core:core-ktx than 1.13.1 is available: 1.17.0 [GradleDependency]
+    implementation("androidx.core:core-ktx:1.13.1")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\build.gradle.kts:48: Warning: A newer version of androidx.appcompat:appcompat than 1.7.0 is available: 1.7.1 [GradleDependency]
+    implementation("androidx.appcompat:appcompat:1.7.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\build.gradle.kts:49: Warning: A newer version of com.google.android.material:material than 1.12.0 is available: 1.13.0 [GradleDependency]
+    implementation("com.google.android.material:material:1.12.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\build.gradle.kts:50: Warning: A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.1 [GradleDependency]
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\build.gradle.kts:53: Warning: A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.8.4 is available: 2.9.3 [GradleDependency]
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\build.gradle.kts:54: Warning: A newer version of androidx.lifecycle:lifecycle-livedata-ktx than 2.8.4 is available: 2.9.3 [GradleDependency]
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.4")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\build.gradle.kts:55: Warning: A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.8.4 is available: 2.9.3 [GradleDependency]
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.4")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\build.gradle.kts:58: Warning: A newer version of androidx.room:room-runtime than 2.6.1 is available: 2.7.2 [GradleDependency]
+    implementation("androidx.room:room-runtime:2.6.1")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\build.gradle.kts:59: Warning: A newer version of androidx.room:room-compiler than 2.6.1 is available: 2.7.2 [GradleDependency]
+    kapt("androidx.room:room-compiler:2.6.1")
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\build.gradle.kts:60: Warning: A newer version of androidx.room:room-ktx than 2.6.1 is available: 2.7.2 [GradleDependency]
+    implementation("androidx.room:room-ktx:2.6.1")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\build.gradle.kts:67: Warning: A newer version of androidx.biometric:biometric than 1.2.0-alpha05 is available: 1.4.0-alpha04 [GradleDependency]
+    implementation("androidx.biometric:biometric:1.2.0-alpha05")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\build.gradle.kts:71: Warning: A newer version of androidx.test.ext:junit than 1.2.1 is available: 1.3.0 [GradleDependency]
+    androidTestImplementation("androidx.test.ext:junit:1.2.1")
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\build.gradle.kts:72: Warning: A newer version of androidx.test.espresso:espresso-core than 3.6.1 is available: 3.7.0 [GradleDependency]
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\build.gradle.kts:59: Warning: This library supports using KSP instead of kapt, which greatly improves performance. Learn more: https://developer.android.com/studio/build/migrate-to-ksp [KaptUsageInsteadOfKsp]
+    kapt("androidx.room:room-compiler:2.6.1")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\build.gradle.kts:64: Warning: This library supports using KSP instead of kapt, which greatly improves performance. Learn more: https://developer.android.com/studio/build/migrate-to-ksp [KaptUsageInsteadOfKsp]
+    kapt("com.github.bumptech.glide:compiler:4.16.0")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "KaptUsageInsteadOfKsp":
+   KSP is a more efficient replacement for kapt. For libraries that support
+   both, KSP should be used to improve build times.
+
+   https://developer.android.com/studio/build/migrate-to-ksp
+
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_splash.xml:5: Warning: Possible overdraw: Root element paints background #FFFFFF with a theme that also paints a background (inferred theme is @style/Theme.BiometricAttendance) [Overdraw]
+    android:background="#FFFFFF">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\dialog_fingerprint.xml:8: Warning: Possible overdraw: Root element paints background @android:color/white with a theme that also paints a background (inferred theme is @style/Theme.BiometricAttendance) [Overdraw]
+    android:background="@android:color/white">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "Overdraw":
+   If you set a background drawable on a root view, then you should use a
+   custom theme where the theme background is null. Otherwise, the theme
+   background will be painted first, only to have your custom background
+   completely cover it; this is called "overdraw".
+
+   NOTE: This detector relies on figuring out which layouts are associated
+   with which activities based on scanning the Java code, and it's currently
+   doing that using an inexact pattern matching algorithm. Therefore, it can
+   incorrectly conclude which activity the layout is associated with and then
+   wrongly complain that a background-theme is hidden.
+
+   If you want your custom background on multiple pages, then you should
+   consider making a custom theme with your custom background and just using
+   that theme instead of a root element background.
+
+   Of course it's possible that your custom drawable is translucent and you
+   want it to be mixed with the background. However, you will get better
+   performance if you pre-mix the background with your drawable and use that
+   resulting image or color as a custom theme background instead.
+
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\values\colors.xml:3: Warning: The resource R.color.white appears to be unused [UnusedResources]
+    <color name="white">#FFFFFF</color>
+           ~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\values\colors.xml:4: Warning: The resource R.color.purple_500 appears to be unused [UnusedResources]
+    <color name="purple_500">#9C27B0</color>
+           ~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\values\colors.xml:5: Warning: The resource R.color.black appears to be unused [UnusedResources]
+    <color name="black">#000000</color>
+           ~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\values\colors.xml:6: Warning: The resource R.color.dark_gray appears to be unused [UnusedResources]
+    <color name="dark_gray">#616161</color>
+           ~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\values\colors.xml:7: Warning: The resource R.color.gray appears to be unused [UnusedResources]
+    <color name="gray">#808080</color>
+           ~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\values\colors.xml:8: Warning: The resource R.color.light_gray appears to be unused [UnusedResources]
+    <color name="light_gray">#D3D3D3</color>
+           ~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\values\colors.xml:12: Warning: The resource R.color.errorColor appears to be unused [UnusedResources]
+    <color name="errorColor">#B00020</color>
+           ~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\values\colors.xml:14: Warning: The resource R.color.backgroundDark appears to be unused [UnusedResources]
+    <color name="backgroundDark">#121212</color>
+           ~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\dialog_fingerprint.xml:2: Warning: The resource R.layout.dialog_fingerprint appears to be unused [UnusedResources]
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+^
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\drawable\failure.gif: Warning: The resource R.drawable.failure appears to be unused [UnusedResources]
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\drawable\fingerprint.gif: Warning: The resource R.drawable.fingerprint appears to be unused [UnusedResources]
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\drawable\image.png: Warning: The resource R.drawable.image appears to be unused [UnusedResources]
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\drawable\logo.png: Warning: The resource R.drawable.logo appears to be unused [UnusedResources]
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\values\strings.xml:4: Warning: The resource R.string.made_by appears to be unused [UnusedResources]
+    <string name="made_by">Made by - Jivaansh Yadav</string>
+            ~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\values\strings.xml:5: Warning: The resource R.string.splash_desc appears to be unused [UnusedResources]
+    <string name="splash_desc">Splash animation</string>
+            ~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\values\strings.xml:6: Warning: The resource R.string.add_class appears to be unused [UnusedResources]
+    <string name="add_class">Add Class</string>
+            ~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\values\strings.xml:7: Warning: The resource R.string.add_student appears to be unused [UnusedResources]
+    <string name="add_student">Add Student</string>
+            ~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\values\strings.xml:8: Warning: The resource R.string.start_attendance appears to be unused [UnusedResources]
+    <string name="start_attendance">Start Attendance</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\values\strings.xml:9: Warning: The resource R.string.end_attendance appears to be unused [UnusedResources]
+    <string name="end_attendance">End Attendance</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\values\strings.xml:10: Warning: The resource R.string.label_class_name appears to be unused [UnusedResources]
+    <string name="label_class_name">Class Name</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\values\strings.xml:11: Warning: The resource R.string.label_teacher_name appears to be unused [UnusedResources]
+    <string name="label_teacher_name">Teacher Name</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\values\strings.xml:12: Warning: The resource R.string.label_school_name appears to be unused [UnusedResources]
+    <string name="label_school_name">School Name</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\values\strings.xml:13: Warning: The resource R.string.label_student_name appears to be unused [UnusedResources]
+    <string name="label_student_name">Student Name</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\values\strings.xml:14: Warning: The resource R.string.edit appears to be unused [UnusedResources]
+    <string name="edit">Edit</string>
+            ~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\values\strings.xml:15: Warning: The resource R.string.data appears to be unused [UnusedResources]
+    <string name="data">Data</string>
+            ~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\values\strings.xml:16: Warning: The resource R.string.mark_holiday appears to be unused [UnusedResources]
+    <string name="mark_holiday">Mark Holiday</string>
+            ~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\values\strings.xml:17: Warning: The resource R.string.save appears to be unused [UnusedResources]
+    <string name="save">Save</string>
+            ~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\values\strings.xml:18: Warning: The resource R.string.export appears to be unused [UnusedResources]
+    <string name="export">Export CSV</string>
+            ~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\drawable\success.gif: Warning: The resource R.drawable.success appears to be unused [UnusedResources]
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\values\themes.xml:15: Warning: The resource R.style.Theme_BiometricAttendance_Dark appears to be unused [UnusedResources]
+    <style name="Theme.BiometricAttendance.Dark" parent="Theme.Material3.Dark.NoActionBar">
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\drawable\failure.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\drawable\fingerprint.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\drawable\splashscreen.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\drawable\success.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+
+   Explanation for issues of type "GifUsage":
+   The .gif file format is discouraged. Consider using .png (preferred) or
+   .jpg (acceptable) instead.
+
+   https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap
+
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\mipmap-mdpi\logo.png: Warning: The logo.png icon has identical contents in the following configuration folders: drawable, mipmap-mdpi [IconDuplicatesConfig]
+
+   Explanation for issues of type "IconDuplicatesConfig":
+   If an icon is provided under different configuration parameters such as
+   drawable-hdpi or -v11, they should typically be different. This detector
+   catches cases where the same icon is provided in different configuration
+   folder which is usually not intentional.
+
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\drawable\edit.png: Warning: Found bitmap drawable res/drawable/edit.png in densityless folder [IconLocation]
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\drawable\failure.gif: Warning: Found bitmap drawable res/drawable/failure.gif in densityless folder [IconLocation]
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\drawable\fingerprint.gif: Warning: Found bitmap drawable res/drawable/fingerprint.gif in densityless folder [IconLocation]
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\drawable\holiday.png: Warning: Found bitmap drawable res/drawable/holiday.png in densityless folder [IconLocation]
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\drawable\image.png: Warning: Found bitmap drawable res/drawable/image.png in densityless folder [IconLocation]
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\drawable\logo.png: Warning: Found bitmap drawable res/drawable/logo.png in densityless folder [IconLocation]
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\drawable\paper.png: Warning: Found bitmap drawable res/drawable/paper.png in densityless folder [IconLocation]
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\drawable\plus.png: Warning: Found bitmap drawable res/drawable/plus.png in densityless folder [IconLocation]
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\drawable\splashscreen.gif: Warning: Found bitmap drawable res/drawable/splashscreen.gif in densityless folder [IconLocation]
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\drawable\startattendance.png: Warning: Found bitmap drawable res/drawable/startattendance.png in densityless folder [IconLocation]
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\drawable\success.gif: Warning: Found bitmap drawable res/drawable/success.gif in densityless folder [IconLocation]
+
+   Explanation for issues of type "IconLocation":
+   The res/drawable folder is intended for density-independent graphics such
+   as shapes defined in XML. For bitmaps, move it to drawable-mdpi and
+   consider providing higher and lower resolution versions in drawable-ldpi,
+   drawable-hdpi and drawable-xhdpi. If the icon really is density independent
+   (for example a solid color) you can place it in drawable-nodpi.
+
+   https://developer.android.com/guide/practices/screens_support.html
+
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_class_form.xml:20: Warning: This text field does not specify an inputType [TextFields]
+        <EditText
+         ~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_student_form.xml:20: Warning: This text field does not specify an inputType [TextFields]
+        <EditText
+         ~~~~~~~~
+
+   Explanation for issues of type "TextFields":
+   Providing an inputType attribute on a text field improves usability because
+   depending on the data to be input, optimized keyboards can be shown to the
+   user (such as just digits and parentheses for a phone number). 
+
+   The lint detector also looks at the id of the view, and if the id offers a
+   hint of the purpose of the field (for example, the id contains the phrase
+   phone or email), then lint will also ensure that the inputType contains the
+   corresponding type attributes.
+
+   If you really want to keep the text field generic, you can suppress this
+   warning by setting inputType="text".
+
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_class_form.xml:20: Warning: Missing autofillHints attribute [Autofill]
+        <EditText
+         ~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_student_form.xml:20: Warning: Missing autofillHints attribute [Autofill]
+        <EditText
+         ~~~~~~~~
+
+   Explanation for issues of type "Autofill":
+   Specify an autofillHints attribute when targeting SDK version 26 or higher
+   or explicitly specify that the view is not important for autofill. Your app
+   can help an autofill service classify the data correctly by providing the
+   meaning of each view that could be autofillable, such as views representing
+   usernames, passwords, credit card fields, email addresses, etc.
+
+   The hints can have any value, but it is recommended to use predefined
+   values like 'username' for a username or 'creditCardNumber' for a credit
+   card number. For a list of all predefined autofill hint constants, see the
+   AUTOFILL_HINT_ constants in the View reference at
+   https://developer.android.com/reference/android/view/View.html.
+
+   You can mark a view unimportant for autofill by specifying an
+   importantForAutofill attribute on that view or a parent view. See
+   https://developer.android.com/reference/android/view/View.html#setImportant
+   ForAutofill(int).
+
+   https://developer.android.com/guide/topics/text/autofill.html
+
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\java\com\jivaansh\biometricattendance\ui\ClassDetailActivity.kt:32: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        binding.tvInstruction.text = "Tap a student to mark attendance"
+                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\java\com\jivaansh\biometricattendance\ui\ClassListActivity.kt:33: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        binding.tvEmpty.text = "No classes yet"
+                                ~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\java\com\jivaansh\biometricattendance\ui\SplashActivity.kt:20: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        binding.tvMadeBy.text = "Made by Jivaansh"
+                                 ~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\java\com\jivaansh\biometricattendance\ui\StudentDetailActivity.kt:17: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        binding.tvAttendance.text = "Attendance Details"
+                                     ~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_class_detail.xml:11: Warning: Hardcoded string "Tap a student to mark attendance", should use @string resource [HardcodedText]
+        android:text="Tap a student to mark attendance"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_class_detail.xml:32: Warning: Hardcoded string "Add Student", should use @string resource [HardcodedText]
+        android:contentDescription="Add Student"/>
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_class_detail.xml:43: Warning: Hardcoded string "Start Attendance", should use @string resource [HardcodedText]
+        android:contentDescription="Start Attendance"/>
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_class_detail.xml:54: Warning: Hardcoded string "Holiday", should use @string resource [HardcodedText]
+        android:contentDescription="Holiday"/>
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_class_detail.xml:64: Warning: Hardcoded string "View Data", should use @string resource [HardcodedText]
+        android:contentDescription="View Data"/>
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_class_form.xml:18: Warning: Hardcoded string "Class Photo", should use @string resource [HardcodedText]
+            android:contentDescription="Class Photo"/>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_class_form.xml:24: Warning: Hardcoded string "School Name", should use @string resource [HardcodedText]
+            android:hint="School Name"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_class_form.xml:41: Warning: Hardcoded string "Save Class", should use @string resource [HardcodedText]
+            android:contentDescription="Save Class"/>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_class_list.xml:16: Warning: Hardcoded string "No classes yet", should use @string resource [HardcodedText]
+        android:text="No classes yet"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_class_list.xml:28: Warning: Hardcoded string "Add Class", should use @string resource [HardcodedText]
+        android:contentDescription="Add Class"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_splash.xml:13: Warning: Hardcoded string "Splash GIF", should use @string resource [HardcodedText]
+        android:contentDescription="Splash GIF" />
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_splash.xml:19: Warning: Hardcoded string "Made by Jivaansh", should use @string resource [HardcodedText]
+        android:text="Made by Jivaansh"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_student_detail.xml:11: Warning: Hardcoded string "Attendance Details", should use @string resource [HardcodedText]
+        android:text="Attendance Details"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_student_detail.xml:24: Warning: Hardcoded string "Export Attendance", should use @string resource [HardcodedText]
+        android:contentDescription="Export Attendance"/>
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_student_form.xml:18: Warning: Hardcoded string "Student Photo", should use @string resource [HardcodedText]
+            android:contentDescription="Student Photo"/>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_student_form.xml:24: Warning: Hardcoded string "Student Name", should use @string resource [HardcodedText]
+            android:hint="Student Name"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_student_form.xml:41: Warning: Hardcoded string "Save Student", should use @string resource [HardcodedText]
+            android:contentDescription="Save Student"/>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\dialog_fingerprint.xml:15: Warning: Hardcoded string "Fingerprint", should use @string resource [HardcodedText]
+        android:contentDescription="Fingerprint"/>
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\dialog_fingerprint.xml:21: Warning: Hardcoded string "Touch sensor", should use @string resource [HardcodedText]
+        android:text="Touch sensor"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\item_class.xml:11: Warning: Hardcoded string "Class Name", should use @string resource [HardcodedText]
+        android:text="Class Name"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\item_class.xml:19: Warning: Hardcoded string "Teacher", should use @string resource [HardcodedText]
+        android:text="Teacher"
+        ~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\item_class.xml:31: Warning: Hardcoded string "Edit Class", should use @string resource [HardcodedText]
+        android:contentDescription="Edit Class"/>
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\item_student.xml:12: Warning: Hardcoded string "Student Photo", should use @string resource [HardcodedText]
+        android:contentDescription="Student Photo"/>
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\item_student.xml:18: Warning: Hardcoded string "Student Name", should use @string resource [HardcodedText]
+        android:text="Student Name"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\item_student.xml:32: Warning: Hardcoded string "Edit Student", should use @string resource [HardcodedText]
+        android:contentDescription="Edit Student"/>
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+0 errors, 99 warnings
