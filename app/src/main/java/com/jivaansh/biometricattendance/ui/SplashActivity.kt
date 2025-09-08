@@ -1,28 +1,25 @@
 package com.jivaansh.biometricattendance.ui
 
-import com.jivaansh.biometricattendance.R
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
-import com.jivaansh.biometricattendance.databinding.ActivitySplashBinding
+import com.jivaansh.biometricattendance.R
+import pl.droidsonroids.gif.GifImageView
 
 class SplashActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivitySplashBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivitySplashBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_splash)
 
-        // Splash GIF
-        binding.splashGif.setImageResource(R.drawable.splashscreen)
-        binding.tvMadeBy.text = "Made by Jivaansh"
+        // Show splashscreen.gif automatically via GifImageView in XML
+        val splashDuration: Long = 2000 // 2 seconds
 
-        // Navigate to Class List after 2 seconds
-        binding.root.postDelayed({
-            startActivity(Intent(this, ClassListActivity::class.java))
+        Handler(Looper.getMainLooper()).postDelayed({
+            val intent = Intent(this, ClassListActivity::class.java)
+            startActivity(intent)
             finish()
-        }, 2000)
+        }, splashDuration)
     }
 }

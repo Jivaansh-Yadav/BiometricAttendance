@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.jivaansh.biometricattendance.app-mergeReleaseResources-39:/values-fi/values-fi.xml",
+            "outputFile": "com.jivaansh.biometricattendance.app-mergeReleaseResources-40:/values-fi/values-fi.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Jivaansh\\.gradle\\caches\\transforms-3\\03b4199a65bec4de03068600f3d1a9aa\\transformed\\biometric-1.2.0-alpha05\\res\\values-fi\\values-fi.xml",

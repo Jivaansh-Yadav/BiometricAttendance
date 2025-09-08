@@ -20,6 +20,7 @@ drawable image
 drawable logo
 drawable paper
 drawable plus
+drawable splash_background
 drawable splashscreen
 drawable startattendance
 drawable success
@@ -43,7 +44,6 @@ id tvAttendance
 id tvClassName
 id tvEmpty
 id tvInstruction
-id tvMadeBy
 id tvName
 id tvStatus
 id tvTeacher
@@ -75,3 +75,4 @@ string splash_desc
 string start_attendance
 style Theme.BiometricAttendance
 style Theme.BiometricAttendance.Dark
+style Theme.BiometricAttendance.NoActionBar

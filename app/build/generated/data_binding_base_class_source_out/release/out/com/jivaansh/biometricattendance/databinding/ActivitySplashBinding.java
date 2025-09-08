@@ -4,9 +4,7 @@ package com.jivaansh.biometricattendance.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
+import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -15,27 +13,23 @@ import com.jivaansh.biometricattendance.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
+import pl.droidsonroids.gif.GifImageView;
 
 public final class ActivitySplashBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final FrameLayout rootView;
 
   @NonNull
-  public final ImageView splashGif;
+  public final GifImageView splashGif;
 
-  @NonNull
-  public final TextView tvMadeBy;
-
-  private ActivitySplashBinding(@NonNull RelativeLayout rootView, @NonNull ImageView splashGif,
-      @NonNull TextView tvMadeBy) {
+  private ActivitySplashBinding(@NonNull FrameLayout rootView, @NonNull GifImageView splashGif) {
     this.rootView = rootView;
     this.splashGif = splashGif;
-    this.tvMadeBy = tvMadeBy;
   }
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public FrameLayout getRoot() {
     return rootView;
   }
 
@@ -61,18 +55,12 @@ public final class ActivitySplashBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.splashGif;
-      ImageView splashGif = ViewBindings.findChildViewById(rootView, id);
+      GifImageView splashGif = ViewBindings.findChildViewById(rootView, id);
       if (splashGif == null) {
         break missingId;
       }
 
-      id = R.id.tvMadeBy;
-      TextView tvMadeBy = ViewBindings.findChildViewById(rootView, id);
-      if (tvMadeBy == null) {
-        break missingId;
-      }
-
-      return new ActivitySplashBinding((RelativeLayout) rootView, splashGif, tvMadeBy);
+      return new ActivitySplashBinding((FrameLayout) rootView, splashGif);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

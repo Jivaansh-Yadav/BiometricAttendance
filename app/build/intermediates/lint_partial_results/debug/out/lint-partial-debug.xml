@@ -48,6 +48,14 @@
             endLine="11"
             endColumn="38"
             endOffset="550"/>
+        <location id="R.string.app_name"
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="3"
+            column="13"
+            startOffset="65"
+            endLine="3"
+            endColumn="28"
+            endOffset="80"/>
         <location id="R.string.start_attendance"
             file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
             line="8"
@@ -56,8 +64,6 @@
             endLine="8"
             endColumn="36"
             endOffset="369"/>
-        <location id="R.drawable.logo"
-            file="${:app*debug*sourceProvider*0*resDir*0}/drawable/logo.png"/>
         <location id="R.color.black"
             file="${:app*debug*sourceProvider*0*resDir*0}/values/colors.xml"
             line="5"
@@ -84,7 +90,7 @@
             endOffset="844"/>
         <entry
             name="model"
-            string="color[errorColor(D),light_gray(D),black(D),primaryColor(U),backgroundDark(D),primaryDarkColor(U),gray(D),white(D),dark_gray(D),backgroundLight(U),purple_500(D),secondaryColor(U)],drawable[image(D),startattendance(U),edit(U),splashscreen(U),holiday(U),plus(U),paper(U),failure(D),success(D),fingerprint(D),logo(D)],id[etSchoolName(D),recyclerClasses(U),btnData(U),spinnerGender(D),tvEmpty(U),btnExport(U),ivPhoto(U),fabAdd(U),fabStart(U),tvStatus(D),tvInstruction(U),splashGif(U),recyclerStudents(U),ivFingerprint(D),ibEdit(U),btnHoliday(U),btnSave(U),tvClassName(U),tvTeacher(U),tvAttendance(U),tvName(U),etName(D),tvMadeBy(U),fabAddStudent(U)],layout[dialog_fingerprint(D),item_student(U),activity_student_form(U),item_class(U),activity_class_list(U),activity_student_detail(U),activity_class_form(U),activity_class_detail(U),activity_splash(U)],mipmap[logo(U)],string[data(D),end_attendance(D),label_student_name(D),edit(D),save(D),label_school_name(D),start_attendance(D),add_class(D),app_name(U),splash_desc(D),label_class_name(D),label_teacher_name(D),mark_holiday(D),made_by(D),add_student(D),export(D)],style[Theme_BiometricAttendance(U),Theme_Material3_Light_NoActionBar(R),Theme_Material3_Dark_NoActionBar(E),Theme_BiometricAttendance_Dark(D)];2f^15,30^e^1d,31^e^11,32^28^e,33^11,34^2a^12,35^e^11,36^21^11^d^10^26^12,37^f^22,49^4a^3^5^b^9,4c^4b^3^5^b^2^4;;;"/>
+            string="color[errorColor(D),light_gray(D),black(D),primaryColor(U),backgroundDark(D),primaryDarkColor(U),gray(D),white(D),dark_gray(D),backgroundLight(U),purple_500(D),secondaryColor(U)],drawable[image(D),startattendance(U),edit(U),splashscreen(U),holiday(U),plus(U),splash_background(U),paper(U),failure(D),success(D),fingerprint(D),logo(U)],id[etSchoolName(D),recyclerClasses(U),btnData(U),spinnerGender(D),tvEmpty(U),btnExport(U),ivPhoto(U),fabAdd(U),fabStart(U),tvStatus(D),tvInstruction(U),splashGif(D),recyclerStudents(U),ivFingerprint(D),ibEdit(U),btnHoliday(U),btnSave(U),tvClassName(U),tvTeacher(U),tvAttendance(U),tvName(U),etName(D),fabAddStudent(U)],layout[dialog_fingerprint(D),item_student(U),activity_student_form(U),item_class(U),activity_class_list(U),activity_student_detail(U),activity_class_form(U),activity_class_detail(U),activity_splash(U)],mipmap[logo(D)],string[data(D),end_attendance(D),label_student_name(D),edit(D),save(D),label_school_name(D),start_attendance(D),add_class(D),app_name(D),splash_desc(D),label_class_name(D),label_teacher_name(D),mark_holiday(D),made_by(D),add_student(D),export(D)],style[Theme_BiometricAttendance(U),Theme_Material3_Light_NoActionBar(R),Theme_Material3_Dark_NoActionBar(E),Theme_BiometricAttendance_Dark(D),Theme_BiometricAttendance_NoActionBar(U)];12^f,2f^16,30^e^1e,31^e^11,32^29^e,33^11,34^2b^13,35^e^11,36^22^11^d^10^27^13,37^f,49^4a^3^5^b^9,4c^4b^3^5^b^2^4,4d^4a^12;;;"/>
         <location id="R.string.made_by"
             file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
             line="4"
@@ -221,6 +227,8 @@
             endOffset="803"/>
         <location id="R.drawable.failure"
             file="${:app*debug*sourceProvider*0*resDir*0}/drawable/failure.gif"/>
+        <location id="R.mipmap.logo"
+            file="${:app*debug*sourceProvider*0*resDir*0}/mipmap-hdpi/logo.png"/>
     </map>
 
 </incidents>

@@ -8,148 +8,177 @@
 8        android:minSdkVersion="24"
 9        android:targetSdkVersion="34" />
 10
-11    <uses-permission android:name="android.permission.WAKE_LOCK" />
-11-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:3:5-67
-11-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:3:22-65
-12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-12-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:4:5-80
-12-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:4:22-78
-13    <uses-permission android:name="android.permission.USE_BIOMETRIC" /> <!-- suppress DeprecatedClassUsageInspection -->
-13-->[androidx.biometric:biometric:1.2.0-alpha05] C:\Users\Jivaansh\.gradle\caches\transforms-3\03b4199a65bec4de03068600f3d1a9aa\transformed\biometric-1.2.0-alpha05\AndroidManifest.xml:22:5-72
-13-->[androidx.biometric:biometric:1.2.0-alpha05] C:\Users\Jivaansh\.gradle\caches\transforms-3\03b4199a65bec4de03068600f3d1a9aa\transformed\biometric-1.2.0-alpha05\AndroidManifest.xml:22:22-69
-14    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
-14-->[androidx.biometric:biometric:1.2.0-alpha05] C:\Users\Jivaansh\.gradle\caches\transforms-3\03b4199a65bec4de03068600f3d1a9aa\transformed\biometric-1.2.0-alpha05\AndroidManifest.xml:25:5-74
-14-->[androidx.biometric:biometric:1.2.0-alpha05] C:\Users\Jivaansh\.gradle\caches\transforms-3\03b4199a65bec4de03068600f3d1a9aa\transformed\biometric-1.2.0-alpha05\AndroidManifest.xml:25:22-71
-15
-16    <permission
-16-->[androidx.core:core:1.13.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\da518ac8857b970804c08cfb8f7c1f4a\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
-17        android:name="com.jivaansh.biometricattendance.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-17-->[androidx.core:core:1.13.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\da518ac8857b970804c08cfb8f7c1f4a\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
-18        android:protectionLevel="signature" />
-18-->[androidx.core:core:1.13.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\da518ac8857b970804c08cfb8f7c1f4a\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+11    <uses-permission android:name="android.permission.USE_BIOMETRIC" /> <!-- suppress DeprecatedClassUsageInspection -->
+11-->[androidx.biometric:biometric:1.2.0-alpha05] C:\Users\Jivaansh\.gradle\caches\transforms-3\03b4199a65bec4de03068600f3d1a9aa\transformed\biometric-1.2.0-alpha05\AndroidManifest.xml:22:5-72
+11-->[androidx.biometric:biometric:1.2.0-alpha05] C:\Users\Jivaansh\.gradle\caches\transforms-3\03b4199a65bec4de03068600f3d1a9aa\transformed\biometric-1.2.0-alpha05\AndroidManifest.xml:22:22-69
+12    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+12-->[androidx.biometric:biometric:1.2.0-alpha05] C:\Users\Jivaansh\.gradle\caches\transforms-3\03b4199a65bec4de03068600f3d1a9aa\transformed\biometric-1.2.0-alpha05\AndroidManifest.xml:25:5-74
+12-->[androidx.biometric:biometric:1.2.0-alpha05] C:\Users\Jivaansh\.gradle\caches\transforms-3\03b4199a65bec4de03068600f3d1a9aa\transformed\biometric-1.2.0-alpha05\AndroidManifest.xml:25:22-71
+13
+14    <permission
+14-->[androidx.core:core:1.13.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\da518ac8857b970804c08cfb8f7c1f4a\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+15        android:name="com.jivaansh.biometricattendance.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+15-->[androidx.core:core:1.13.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\da518ac8857b970804c08cfb8f7c1f4a\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+16        android:protectionLevel="signature" />
+16-->[androidx.core:core:1.13.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\da518ac8857b970804c08cfb8f7c1f4a\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+17
+18    <uses-permission android:name="com.jivaansh.biometricattendance.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+18-->[androidx.core:core:1.13.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\da518ac8857b970804c08cfb8f7c1f4a\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.13.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\da518ac8857b970804c08cfb8f7c1f4a\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
 19
-20    <uses-permission android:name="com.jivaansh.biometricattendance.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- For writing to external Downloads via MediaStore no legacy storage permission required on Android 11+ -->
-20-->[androidx.core:core:1.13.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\da518ac8857b970804c08cfb8f7c1f4a\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
-20-->[androidx.core:core:1.13.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\da518ac8857b970804c08cfb8f7c1f4a\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
-21    <application
-21-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:7:5-26:19
-22        android:allowBackup="true"
-22-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:8:9-35
-23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-23-->[androidx.core:core:1.13.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\da518ac8857b970804c08cfb8f7c1f4a\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
-24        android:extractNativeLibs="false"
-25        android:icon="@mipmap/logo"
-25-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:10:9-36
-26        android:label="@string/app_name"
-26-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:9:9-41
-27        android:roundIcon="@mipmap/logo"
-27-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:11:9-41
+20    <application
+20-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:4:5-48:19
+21        android:allowBackup="true"
+21-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:5:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.13.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\da518ac8857b970804c08cfb8f7c1f4a\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+23        android:extractNativeLibs="false"
+24        android:icon="@drawable/logo"
+24-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:6:9-38
+25        android:label="Biometric Attendance"
+25-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:7:9-45
+26        android:roundIcon="@drawable/logo"
+26-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:8:9-43
+27        android:supportsRtl="true"
+27-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:9:9-35
 28        android:theme="@style/Theme.BiometricAttendance" >
-28-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:12:9-57
-29        <activity
-29-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:14:9-21:20
-30            android:name="com.jivaansh.biometricattendance.ui.SplashActivity"
-30-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:15:13-46
-31            android:exported="true" >
-31-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:16:13-36
-32            <intent-filter>
-32-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:17:13-20:29
-33                <action android:name="android.intent.action.MAIN" />
-33-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:18:17-68
-33-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:18:25-66
-34
-35                <category android:name="android.intent.category.LAUNCHER" />
-35-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:19:17-76
-35-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:19:27-74
-36            </intent-filter>
-37        </activity>
-38        <activity android:name="com.jivaansh.biometricattendance.ui.ClassFormActivity" />
-38-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:22:9-58
-38-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:22:19-55
-39        <activity android:name="com.jivaansh.biometricattendance.ui.ClassDetailActivity" />
-39-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:23:9-60
-39-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:23:19-57
-40        <activity android:name="com.jivaansh.biometricattendance.ui.StudentFormActivity" />
-40-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:24:9-60
-40-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:24:19-57
-41        <activity android:name="com.jivaansh.biometricattendance.ui.StudentDetailActivity" />
-41-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:25:9-62
-41-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:25:19-59
-42
-43        <provider
-43-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\376b2bea5336e812f02891e16b388c8f\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-44            android:name="androidx.startup.InitializationProvider"
-44-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\376b2bea5336e812f02891e16b388c8f\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:25:13-67
-45            android:authorities="com.jivaansh.biometricattendance.androidx-startup"
-45-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\376b2bea5336e812f02891e16b388c8f\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:26:13-68
-46            android:exported="false" >
-46-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\376b2bea5336e812f02891e16b388c8f\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:27:13-37
-47            <meta-data
-47-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\376b2bea5336e812f02891e16b388c8f\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-48                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-48-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\376b2bea5336e812f02891e16b388c8f\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:30:17-75
-49                android:value="androidx.startup" />
-49-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\376b2bea5336e812f02891e16b388c8f\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:31:17-49
-50            <meta-data
-50-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Jivaansh\.gradle\caches\transforms-3\5f6f4995b91bbda129301c0a9ff033cf\transformed\jetified-lifecycle-process-2.8.4\AndroidManifest.xml:29:13-31:52
-51                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-51-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Jivaansh\.gradle\caches\transforms-3\5f6f4995b91bbda129301c0a9ff033cf\transformed\jetified-lifecycle-process-2.8.4\AndroidManifest.xml:30:17-78
-52                android:value="androidx.startup" />
-52-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Jivaansh\.gradle\caches\transforms-3\5f6f4995b91bbda129301c0a9ff033cf\transformed\jetified-lifecycle-process-2.8.4\AndroidManifest.xml:31:17-49
-53            <meta-data
-53-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
-54                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-54-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
-55                android:value="androidx.startup" />
-55-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
-56        </provider>
-57
-58        <service
-58-->[androidx.room:room-runtime:2.6.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\17f1ffebf4cb72dabf1c238cf801e42c\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
-59            android:name="androidx.room.MultiInstanceInvalidationService"
-59-->[androidx.room:room-runtime:2.6.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\17f1ffebf4cb72dabf1c238cf801e42c\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
-60            android:directBootAware="true"
-60-->[androidx.room:room-runtime:2.6.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\17f1ffebf4cb72dabf1c238cf801e42c\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
-61            android:exported="false" />
-61-->[androidx.room:room-runtime:2.6.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\17f1ffebf4cb72dabf1c238cf801e42c\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
-62
-63        <receiver
-63-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
-64            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-64-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
-65            android:directBootAware="false"
-65-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
-66            android:enabled="true"
-66-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
-67            android:exported="true"
-67-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
-68            android:permission="android.permission.DUMP" >
-68-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
-69            <intent-filter>
-69-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
-70                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-70-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-70-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
-71            </intent-filter>
-72            <intent-filter>
-72-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
-73                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-73-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-73-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
-74            </intent-filter>
-75            <intent-filter>
-75-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
-76                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-76-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-76-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
-77            </intent-filter>
-78            <intent-filter>
-78-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
-79                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
-80            </intent-filter>
-81        </receiver>
-82    </application>
-83
-84</manifest>
+28-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:10:9-57
+29
+30        <!-- Splash screen is the launcher activity -->
+31        <activity
+31-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:13:9-21:20
+32            android:name="com.jivaansh.biometricattendance.ui.SplashActivity"
+32-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:14:13-46
+33            android:exported="true"
+33-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:15:13-36
+34            android:theme="@style/Theme.BiometricAttendance.NoActionBar" >
+34-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:16:13-73
+35            <intent-filter>
+35-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:17:13-20:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:18:17-69
+36-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:18:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:19:17-77
+38-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:19:27-74
+39            </intent-filter>
+40        </activity>
+41
+42        <!-- Class list (main screen after splash) -->
+43        <activity
+43-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:24:9-26:40
+44            android:name="com.jivaansh.biometricattendance.ui.ClassListActivity"
+44-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:25:13-49
+45            android:exported="false" />
+45-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:26:13-37
+46
+47        <!-- Class detail screen -->
+48        <activity
+48-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:29:9-31:40
+49            android:name="com.jivaansh.biometricattendance.ui.ClassDetailActivity"
+49-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:30:13-51
+50            android:exported="false" />
+50-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:31:13-37
+51
+52        <!-- Class form screen -->
+53        <activity
+53-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:34:9-36:40
+54            android:name="com.jivaansh.biometricattendance.ui.ClassFormActivity"
+54-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:35:13-49
+55            android:exported="false" />
+55-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:36:13-37
+56
+57        <!-- Student detail screen -->
+58        <activity
+58-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:39:9-41:40
+59            android:name="com.jivaansh.biometricattendance.ui.StudentDetailActivity"
+59-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:40:13-53
+60            android:exported="false" />
+60-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:41:13-37
+61
+62        <!-- Student form screen -->
+63        <activity
+63-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:44:9-46:40
+64            android:name="com.jivaansh.biometricattendance.ui.StudentFormActivity"
+64-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:45:13-51
+65            android:exported="false" />
+65-->C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:46:13-37
+66
+67        <provider
+67-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\376b2bea5336e812f02891e16b388c8f\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+68            android:name="androidx.startup.InitializationProvider"
+68-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\376b2bea5336e812f02891e16b388c8f\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:25:13-67
+69            android:authorities="com.jivaansh.biometricattendance.androidx-startup"
+69-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\376b2bea5336e812f02891e16b388c8f\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:26:13-68
+70            android:exported="false" >
+70-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\376b2bea5336e812f02891e16b388c8f\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:27:13-37
+71            <meta-data
+71-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\376b2bea5336e812f02891e16b388c8f\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+72                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+72-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\376b2bea5336e812f02891e16b388c8f\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:30:17-75
+73                android:value="androidx.startup" />
+73-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\376b2bea5336e812f02891e16b388c8f\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:31:17-49
+74            <meta-data
+74-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Jivaansh\.gradle\caches\transforms-3\5f6f4995b91bbda129301c0a9ff033cf\transformed\jetified-lifecycle-process-2.8.4\AndroidManifest.xml:29:13-31:52
+75                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+75-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Jivaansh\.gradle\caches\transforms-3\5f6f4995b91bbda129301c0a9ff033cf\transformed\jetified-lifecycle-process-2.8.4\AndroidManifest.xml:30:17-78
+76                android:value="androidx.startup" />
+76-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Jivaansh\.gradle\caches\transforms-3\5f6f4995b91bbda129301c0a9ff033cf\transformed\jetified-lifecycle-process-2.8.4\AndroidManifest.xml:31:17-49
+77            <meta-data
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+78                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+78-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+79                android:value="androidx.startup" />
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+80        </provider>
+81
+82        <service
+82-->[androidx.room:room-runtime:2.6.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\17f1ffebf4cb72dabf1c238cf801e42c\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+83            android:name="androidx.room.MultiInstanceInvalidationService"
+83-->[androidx.room:room-runtime:2.6.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\17f1ffebf4cb72dabf1c238cf801e42c\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+84            android:directBootAware="true"
+84-->[androidx.room:room-runtime:2.6.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\17f1ffebf4cb72dabf1c238cf801e42c\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+85            android:exported="false" />
+85-->[androidx.room:room-runtime:2.6.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\17f1ffebf4cb72dabf1c238cf801e42c\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+86
+87        <receiver
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+88            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+89            android:directBootAware="false"
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+90            android:enabled="true"
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+91            android:exported="true"
+91-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+92            android:permission="android.permission.DUMP" >
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+93            <intent-filter>
+93-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+94                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+94-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+94-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+95            </intent-filter>
+96            <intent-filter>
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+97                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+97-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+97-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+98            </intent-filter>
+99            <intent-filter>
+99-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+100                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+100-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+100-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+101            </intent-filter>
+102            <intent-filter>
+102-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+103                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+103-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+103-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+104            </intent-filter>
+105        </receiver>
+106    </application>
+107
+108</manifest>

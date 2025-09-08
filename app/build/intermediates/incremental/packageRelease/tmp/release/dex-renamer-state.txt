@@ -1,4 +1,4 @@
-#Sun Sep 07 19:59:15 IST 2025
+#Mon Sep 08 14:10:08 IST 2025
 base.1=C\:\\Users\\Jivaansh\\Desktop\\BiometricAttendance\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes2.dex
 path.1=classes2.dex
 base.0=C\:\\Users\\Jivaansh\\Desktop\\BiometricAttendance\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex

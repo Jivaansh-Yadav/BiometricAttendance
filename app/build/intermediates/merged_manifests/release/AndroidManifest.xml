@@ -8,8 +8,6 @@
         android:minSdkVersion="24"
         android:targetSdkVersion="34" />
 
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.USE_BIOMETRIC" /> <!-- suppress DeprecatedClassUsageInspection -->
     <uses-permission android:name="android.permission.USE_FINGERPRINT" />
 
@@ -17,28 +15,54 @@
         android:name="com.jivaansh.biometricattendance.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.jivaansh.biometricattendance.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- For writing to external Downloads via MediaStore no legacy storage permission required on Android 11+ -->
+    <uses-permission android:name="com.jivaansh.biometricattendance.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
     <application
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:extractNativeLibs="false"
-        android:icon="@mipmap/logo"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/logo"
+        android:icon="@drawable/logo"
+        android:label="Biometric Attendance"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
         android:theme="@style/Theme.BiometricAttendance" >
+
+        <!-- Splash screen is the launcher activity -->
         <activity
             android:name="com.jivaansh.biometricattendance.ui.SplashActivity"
-            android:exported="true" >
+            android:exported="true"
+            android:theme="@style/Theme.BiometricAttendance.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.jivaansh.biometricattendance.ui.ClassFormActivity" />
-        <activity android:name="com.jivaansh.biometricattendance.ui.ClassDetailActivity" />
-        <activity android:name="com.jivaansh.biometricattendance.ui.StudentFormActivity" />
-        <activity android:name="com.jivaansh.biometricattendance.ui.StudentDetailActivity" />
+
+        <!-- Class list (main screen after splash) -->
+        <activity
+            android:name="com.jivaansh.biometricattendance.ui.ClassListActivity"
+            android:exported="false" />
+
+        <!-- Class detail screen -->
+        <activity
+            android:name="com.jivaansh.biometricattendance.ui.ClassDetailActivity"
+            android:exported="false" />
+
+        <!-- Class form screen -->
+        <activity
+            android:name="com.jivaansh.biometricattendance.ui.ClassFormActivity"
+            android:exported="false" />
+
+        <!-- Student detail screen -->
+        <activity
+            android:name="com.jivaansh.biometricattendance.ui.StudentDetailActivity"
+            android:exported="false" />
+
+        <!-- Student form screen -->
+        <activity
+            android:name="com.jivaansh.biometricattendance.ui.StudentFormActivity"
+            android:exported="false" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

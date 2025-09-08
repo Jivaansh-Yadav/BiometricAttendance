@@ -193,34 +193,6 @@
     <incident
         id="HardcodedText"
         severity="warning"
-        message="Hardcoded string &quot;Splash GIF&quot;, should use `@string` resource">
-        <location
-            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_splash.xml"
-            line="13"
-            column="9"
-            startOffset="466"
-            endLine="13"
-            endColumn="48"
-            endOffset="505"/>
-    </incident>
-
-    <incident
-        id="HardcodedText"
-        severity="warning"
-        message="Hardcoded string &quot;Made by Jivaansh&quot;, should use `@string` resource">
-        <location
-            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_splash.xml"
-            line="19"
-            column="9"
-            startOffset="662"
-            endLine="19"
-            endColumn="40"
-            endOffset="693"/>
-    </incident>
-
-    <incident
-        id="HardcodedText"
-        severity="warning"
         message="Hardcoded string &quot;Attendance Details&quot;, should use `@string` resource">
         <location
             file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_student_detail.xml"
@@ -475,20 +447,6 @@
             endLine="33"
             endColumn="47"
             endOffset="1220"/>
-    </incident>
-
-    <incident
-        id="SetTextI18n"
-        severity="warning"
-        message="String literal in `setText` can not be translated. Use Android resources instead.">
-        <location
-            file="${:app*debug*sourceProvider*0*javaDir*0}/com/jivaansh/biometricattendance/ui/SplashActivity.kt"
-            line="20"
-            column="34"
-            startOffset="693"
-            endLine="20"
-            endColumn="50"
-            endOffset="709"/>
     </incident>
 
     <incident
@@ -787,6 +745,20 @@
     </incident>
 
     <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@android:color/white` with a theme that also paints a background (inferred theme is `@style/Theme.BiometricAttendance`)">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/dialog_fingerprint.xml"
+            line="8"
+            column="5"
+            startOffset="295"
+            endLine="8"
+            endColumn="46"
+            endOffset="336"/>
+    </incident>
+
+    <incident
         id="IconLocation"
         severity="warning"
         message="Found bitmap drawable `res/drawable/edit.png` in densityless folder">
@@ -914,34 +886,6 @@
             file="${:app*debug*sourceProvider*0*resDir*0}/mipmap-mdpi/logo.png"/>
         <location
             file="${:app*debug*sourceProvider*0*resDir*0}/drawable/logo.png"/>
-    </incident>
-
-    <incident
-        id="Overdraw"
-        severity="warning"
-        message="Possible overdraw: Root element paints background `#FFFFFF` with a theme that also paints a background (inferred theme is `@style/Theme.BiometricAttendance`)">
-        <location
-            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_splash.xml"
-            line="5"
-            column="5"
-            startOffset="203"
-            endLine="5"
-            endColumn="33"
-            endOffset="231"/>
-    </incident>
-
-    <incident
-        id="Overdraw"
-        severity="warning"
-        message="Possible overdraw: Root element paints background `@android:color/white` with a theme that also paints a background (inferred theme is `@style/Theme.BiometricAttendance`)">
-        <location
-            file="${:app*debug*sourceProvider*0*resDir*0}/layout/dialog_fingerprint.xml"
-            line="8"
-            column="5"
-            startOffset="295"
-            endLine="8"
-            endColumn="46"
-            endOffset="336"/>
     </incident>
 
 </incidents>

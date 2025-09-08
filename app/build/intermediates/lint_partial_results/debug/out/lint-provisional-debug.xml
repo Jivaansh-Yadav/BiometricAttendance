@@ -2,39 +2,17 @@
 <incidents format="6" by="lint 8.1.1" type="conditional_incidents">
 
     <incident
-        id="ScopedStorage"
-        severity="warning"
-        message="">
-        <location
-            file="${:app*debug*sourceProvider*0*manifest*0}"
-            line="4"
-            column="36"
-            startOffset="176"
-            endLine="4"
-            endColumn="77"
-            endOffset="217"/>
-        <map>
-            <entry
-                name="maxSdkVersion"
-                int="2147483647"/>
-            <entry
-                name="read"
-                boolean="false"/>
-        </map>
-    </incident>
-
-    <incident
         id="CustomSplashScreen"
         severity="warning"
         message="The application should not provide its own launch screen">
         <location
             file="${:app*debug*sourceProvider*0*javaDir*0}/com/jivaansh/biometricattendance/ui/SplashActivity.kt"
-            line="9"
+            line="11"
             column="7"
-            startOffset="271"
-            endLine="9"
+            startOffset="289"
+            endLine="11"
             endColumn="21"
-            endOffset="285"/>
+            endOffset="303"/>
         <map>
             <condition targetGE="31"/>
         </map>

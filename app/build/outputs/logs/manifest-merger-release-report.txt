@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:1:1-27:12
-INJECTED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:1:1-27:12
-INJECTED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:1:1-27:12
-INJECTED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:1:1-27:12
+ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:2:1-50:12
 MERGED from [androidx.databinding:viewbinding:8.1.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\9b84996cadd4269bd00a1919635ea2e1\transformed\jetified-viewbinding-8.1.1\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\3db703021164c4d82a4ee0bd769c64f9\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.biometric:biometric:1.2.0-alpha05] C:\Users\Jivaansh\.gradle\caches\transforms-3\03b4199a65bec4de03068600f3d1a9aa\transformed\biometric-1.2.0-alpha05\AndroidManifest.xml:17:1-27:12
@@ -43,12 +43,14 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.8.4] C:\Users\Jivaansh\
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4] C:\Users\Jivaansh\.gradle\caches\transforms-3\1887947088fed070ee45cb5660161f91\transformed\jetified-lifecycle-viewmodel-ktx-2.8.4\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\17f1ffebf4cb72dabf1c238cf801e42c\transformed\room-runtime-2.6.1\AndroidManifest.xml:17:1-31:12
 MERGED from [androidx.room:room-ktx:2.6.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\5f6fd24d258655ba4ffb31deaa3f8706\transformed\jetified-room-ktx-2.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.2.29] C:\Users\Jivaansh\.gradle\caches\transforms-3\b890d876d731c0ee08d0fdb12eec2c73\transformed\jetified-android-gif-drawable-1.2.29\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\3039470341aa5855703b4bef875eeb99\transformed\sqlite-framework-2.4.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\f60d74f4b32132cda2272cf37d59f9eb\transformed\sqlite-2.4.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\083880f1e8d3d45e3417fefb544f5c0e\transformed\jetified-annotation-experimental-1.4.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\9e18660676f5548711c21edca293b4e0\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:17:1-55:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\da33fbfec090cb1b626a9923de6618db\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\c7cfd8ea688b3e86fb761956e0b94a94\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.sqlite:sqlite-framework:2.4.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\3039470341aa5855703b4bef875eeb99\transformed\sqlite-framework-2.4.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\f60d74f4b32132cda2272cf37d59f9eb\transformed\sqlite-2.4.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\5d64c6790f6f5b952ef67efc180fdca5\transformed\jetified-gifdecoder-4.16.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.exifinterface:exifinterface:1.3.6] C:\Users\Jivaansh\.gradle\caches\transforms-3\a6bfa809fc5ae973461db79458235424\transformed\exifinterface-1.3.6\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\90528aaff89d435a80f4367d59caeaef\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
@@ -58,7 +60,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Ji
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\1562955a8dc74562face6dfae2617479\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\5c5613ee68b8facdf29725b533e27fdd\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\02bc5d0d285571f6b4147f5863dd8e3d\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\083880f1e8d3d45e3417fefb544f5c0e\transformed\jetified-annotation-experimental-1.4.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] C:\Users\Jivaansh\.gradle\caches\transforms-3\a3364f2ab09fdaf18c80cac3595e98a6\transformed\jetified-relinker-1.4.5\AndroidManifest.xml:2:1-7:12
 	package
 		INJECTED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml
 	android:versionName
@@ -66,18 +68,10 @@ MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Jivaans
 	android:versionCode
 		INJECTED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:1:11-69
-uses-permission#android.permission.WAKE_LOCK
-ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:3:5-67
-	android:name
-		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:3:22-65
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:4:5-80
-	android:name
-		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:4:22-78
+		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:7:5-26:19
-INJECTED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:7:5-26:19
+ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:4:5-48:19
+INJECTED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:4:5-48:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\3db703021164c4d82a4ee0bd769c64f9\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\3db703021164c4d82a4ee0bd769c64f9\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Jivaansh\.gradle\caches\transforms-3\64fd78e3e314614d38ea94c21bf1c434\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -100,48 +94,66 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Ji
 		INJECTED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\da518ac8857b970804c08cfb8f7c1f4a\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:9:9-35
 	android:label
-		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:9:9-41
+		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:7:9-45
 	android:roundIcon
-		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:11:9-41
+		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:8:9-43
 	android:icon
-		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:10:9-36
+		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:6:9-38
 	android:allowBackup
-		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:5:9-35
 	android:theme
-		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:12:9-57
+		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:10:9-57
 activity#com.jivaansh.biometricattendance.ui.SplashActivity
-ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:14:9-21:20
+ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:13:9-21:20
 	android:exported
-		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:16:13-36
+		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:15:13-36
+	android:theme
+		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:16:13-73
 	android:name
-		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:15:13-46
+		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:14:13-46
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:17:13-20:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:18:17-68
+ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:18:17-69
 	android:name
 		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:19:17-76
+ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:19:17-77
 	android:name
 		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:19:27-74
-activity#com.jivaansh.biometricattendance.ui.ClassFormActivity
-ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:22:9-58
+activity#com.jivaansh.biometricattendance.ui.ClassListActivity
+ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:24:9-26:40
+	android:exported
+		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:22:19-55
+		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:25:13-49
 activity#com.jivaansh.biometricattendance.ui.ClassDetailActivity
-ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:23:9-60
+ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:29:9-31:40
+	android:exported
+		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:23:19-57
-activity#com.jivaansh.biometricattendance.ui.StudentFormActivity
-ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:24:9-60
+		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:30:13-51
+activity#com.jivaansh.biometricattendance.ui.ClassFormActivity
+ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:34:9-36:40
+	android:exported
+		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:36:13-37
 	android:name
-		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:24:19-57
+		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:35:13-49
 activity#com.jivaansh.biometricattendance.ui.StudentDetailActivity
-ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:25:9-62
+ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:39:9-41:40
+	android:exported
+		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:41:13-37
 	android:name
-		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:25:19-59
+		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:40:13-53
+activity#com.jivaansh.biometricattendance.ui.StudentFormActivity
+ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:44:9-46:40
+	android:exported
+		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:46:13-37
+	android:name
+		ADDED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:45:13-51
 uses-sdk
 INJECTED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml
@@ -224,6 +236,14 @@ MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\Jivaansh\.gradle\caches\
 MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\17f1ffebf4cb72dabf1c238cf801e42c\transformed\room-runtime-2.6.1\AndroidManifest.xml:21:5-44
 MERGED from [androidx.room:room-ktx:2.6.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\5f6fd24d258655ba4ffb31deaa3f8706\transformed\jetified-room-ktx-2.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.room:room-ktx:2.6.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\5f6fd24d258655ba4ffb31deaa3f8706\transformed\jetified-room-ktx-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.2.29] C:\Users\Jivaansh\.gradle\caches\transforms-3\b890d876d731c0ee08d0fdb12eec2c73\transformed\jetified-android-gif-drawable-1.2.29\AndroidManifest.xml:5:5-44
+MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.2.29] C:\Users\Jivaansh\.gradle\caches\transforms-3\b890d876d731c0ee08d0fdb12eec2c73\transformed\jetified-android-gif-drawable-1.2.29\AndroidManifest.xml:5:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\3039470341aa5855703b4bef875eeb99\transformed\sqlite-framework-2.4.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\3039470341aa5855703b4bef875eeb99\transformed\sqlite-framework-2.4.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\f60d74f4b32132cda2272cf37d59f9eb\transformed\sqlite-2.4.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\f60d74f4b32132cda2272cf37d59f9eb\transformed\sqlite-2.4.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\083880f1e8d3d45e3417fefb544f5c0e\transformed\jetified-annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\083880f1e8d3d45e3417fefb544f5c0e\transformed\jetified-annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\9e18660676f5548711c21edca293b4e0\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\9e18660676f5548711c21edca293b4e0\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jivaansh\.gradle\caches\transforms-3\8641bceadccacccd58f14bbe3c4fe584\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:21:5-44
@@ -232,10 +252,6 @@ MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Jivaansh\.gradle\caches\
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\da33fbfec090cb1b626a9923de6618db\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\c7cfd8ea688b3e86fb761956e0b94a94\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\c7cfd8ea688b3e86fb761956e0b94a94\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite-framework:2.4.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\3039470341aa5855703b4bef875eeb99\transformed\sqlite-framework-2.4.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite-framework:2.4.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\3039470341aa5855703b4bef875eeb99\transformed\sqlite-framework-2.4.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\f60d74f4b32132cda2272cf37d59f9eb\transformed\sqlite-2.4.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\f60d74f4b32132cda2272cf37d59f9eb\transformed\sqlite-2.4.0\AndroidManifest.xml:20:5-44
 MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\5d64c6790f6f5b952ef67efc180fdca5\transformed\jetified-gifdecoder-4.16.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\5d64c6790f6f5b952ef67efc180fdca5\transformed\jetified-gifdecoder-4.16.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.exifinterface:exifinterface:1.3.6] C:\Users\Jivaansh\.gradle\caches\transforms-3\a6bfa809fc5ae973461db79458235424\transformed\exifinterface-1.3.6\AndroidManifest.xml:20:5-22:41
@@ -254,8 +270,8 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\5c5613ee68b8facdf29725b533e27fdd\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\02bc5d0d285571f6b4147f5863dd8e3d\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\02bc5d0d285571f6b4147f5863dd8e3d\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\083880f1e8d3d45e3417fefb544f5c0e\transformed\jetified-annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Jivaansh\.gradle\caches\transforms-3\083880f1e8d3d45e3417fefb544f5c0e\transformed\jetified-annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
+MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] C:\Users\Jivaansh\.gradle\caches\transforms-3\a3364f2ab09fdaf18c80cac3595e98a6\transformed\jetified-relinker-1.4.5\AndroidManifest.xml:5:5-43
+MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] C:\Users\Jivaansh\.gradle\caches\transforms-3\a3364f2ab09fdaf18c80cac3595e98a6\transformed\jetified-relinker-1.4.5\AndroidManifest.xml:5:5-43
 	android:targetSdkVersion
 		INJECTED from C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml
 	android:minSdkVersion

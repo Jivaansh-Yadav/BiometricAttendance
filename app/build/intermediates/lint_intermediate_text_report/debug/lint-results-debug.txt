@@ -27,41 +27,7 @@ of the library. [ObsoleteLintCustomCheck]
    meaning that you need to use a newer version of lint (or Android Studio or
    Gradle plugin etc) to work with these checks.
 
-C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\AndroidManifest.xml:4: Warning: WRITE_EXTERNAL_STORAGE is deprecated (and is not granted) when targeting Android 13+. If you need to write to shared storage, use the MediaStore.createWriteRequest intent. [ScopedStorage]
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-   Explanation for issues of type "ScopedStorage":
-   Scoped storage is enforced on Android 10+ (or Android 11+ if using
-   requestLegacyExternalStorage). In particular, WRITE_EXTERNAL_STORAGE will
-   no longer provide write access to all files; it will provide the equivalent
-   of READ_EXTERNAL_STORAGE instead.
-
-   As of Android 13, if you need to query or interact with MediaStore or media
-   files on the shared storage, you should be using instead one or more new
-   storage permissions:
-   * android.permission.READ_MEDIA_IMAGES
-   * android.permission.READ_MEDIA_VIDEO
-   * android.permission.READ_MEDIA_AUDIO
-
-   and then add maxSdkVersion="33" to the older permission. See the developer
-   guide for how to do this:
-   https://developer.android.com/about/versions/13/behavior-changes-13#granula
-   r-media-permissions
-
-   The MANAGE_EXTERNAL_STORAGE permission can be used to manage all files, but
-   it is rarely necessary and most apps on Google Play are not allowed to use
-   it. Most apps should instead migrate to use scoped storage. To modify or
-   delete files, apps should request write access from the user as described
-   at https://goo.gle/android-mediastore-createwriterequest.
-
-   To learn more, read these resources: Play policy:
-   https://goo.gle/policy-storage-help Allowable use cases:
-   https://goo.gle/policy-storage-usecases
-
-   https://goo.gle/android-storage-usecases
-
-C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\java\com\jivaansh\biometricattendance\ui\SplashActivity.kt:9: Warning: The application should not provide its own launch screen [CustomSplashScreen]
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\java\com\jivaansh\biometricattendance\ui\SplashActivity.kt:11: Warning: The application should not provide its own launch screen [CustomSplashScreen]
 class SplashActivity : AppCompatActivity() {
       ~~~~~~~~~~~~~~
 
@@ -134,9 +100,6 @@ C:\Users\Jivaansh\Desktop\BiometricAttendance\app\build.gradle.kts:64: Warning: 
 
    https://developer.android.com/studio/build/migrate-to-ksp
 
-C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_splash.xml:5: Warning: Possible overdraw: Root element paints background #FFFFFF with a theme that also paints a background (inferred theme is @style/Theme.BiometricAttendance) [Overdraw]
-    android:background="#FFFFFF">
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\dialog_fingerprint.xml:8: Warning: Possible overdraw: Root element paints background @android:color/white with a theme that also paints a background (inferred theme is @style/Theme.BiometricAttendance) [Overdraw]
     android:background="@android:color/white">
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -192,7 +155,10 @@ C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\dialog_fin
 C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\drawable\failure.gif: Warning: The resource R.drawable.failure appears to be unused [UnusedResources]
 C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\drawable\fingerprint.gif: Warning: The resource R.drawable.fingerprint appears to be unused [UnusedResources]
 C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\drawable\image.png: Warning: The resource R.drawable.image appears to be unused [UnusedResources]
-C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\drawable\logo.png: Warning: The resource R.drawable.logo appears to be unused [UnusedResources]
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\mipmap-hdpi\logo.png: Warning: The resource R.mipmap.logo appears to be unused [UnusedResources]
+C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\values\strings.xml:3: Warning: The resource R.string.app_name appears to be unused [UnusedResources]
+    <string name="app_name">Biometric Attendance</string>
+            ~~~~~~~~~~~~~~~
 C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\values\strings.xml:4: Warning: The resource R.string.made_by appears to be unused [UnusedResources]
     <string name="made_by">Made by - Jivaansh Yadav</string>
             ~~~~~~~~~~~~~~
@@ -350,9 +316,6 @@ C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\java\com\jivaansh\bio
 C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\java\com\jivaansh\biometricattendance\ui\ClassListActivity.kt:33: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
         binding.tvEmpty.text = "No classes yet"
                                 ~~~~~~~~~~~~~~
-C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\java\com\jivaansh\biometricattendance\ui\SplashActivity.kt:20: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
-        binding.tvMadeBy.text = "Made by Jivaansh"
-                                 ~~~~~~~~~~~~~~~~
 C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\java\com\jivaansh\biometricattendance\ui\StudentDetailActivity.kt:17: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
         binding.tvAttendance.text = "Attendance Details"
                                      ~~~~~~~~~~~~~~~~~~
@@ -400,12 +363,6 @@ C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_c
 C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_class_list.xml:28: Warning: Hardcoded string "Add Class", should use @string resource [HardcodedText]
         android:contentDescription="Add Class"
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_splash.xml:13: Warning: Hardcoded string "Splash GIF", should use @string resource [HardcodedText]
-        android:contentDescription="Splash GIF" />
-        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_splash.xml:19: Warning: Hardcoded string "Made by Jivaansh", should use @string resource [HardcodedText]
-        android:text="Made by Jivaansh"
-        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\activity_student_detail.xml:11: Warning: Hardcoded string "Attendance Details", should use @string resource [HardcodedText]
         android:text="Attendance Details"
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -460,4 +417,4 @@ C:\Users\Jivaansh\Desktop\BiometricAttendance\app\src\main\res\layout\item_stude
    There are quickfixes to automatically extract this hardcoded string into a
    resource lookup.
 
-0 errors, 99 warnings
+0 errors, 95 warnings

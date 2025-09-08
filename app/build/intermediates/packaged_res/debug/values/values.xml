@@ -44,4 +44,9 @@
         <item name="android:navigationBarColor">@color/backgroundDark</item>
         <item name="android:windowBackground">@color/backgroundDark</item>
     </style>
+    <style name="Theme.BiometricAttendance.NoActionBar" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
 </resources>
